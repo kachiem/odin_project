@@ -2,7 +2,6 @@
 /* basic elements */
 
 header {
-	padding-top: 20px;
     height: 87px;
     width: 100%;
 }
@@ -16,39 +15,84 @@ body {
 	color: #555753; 
 	margin: 0; 
 	padding: 0;
-	}
+    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center #google-logo{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    padding: 112px 100px 0px 100px;
+}
+.center #google-search-bar{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+.center #google-search-bar{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+.search {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+}
 a:link {  
     text-decoration: none; 
     color: #70757A;
     padding: 0px 0px 0px 27px;
+    font-size: 13px;
     }
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #f3f3f3;
+a.no-color-change {
+    color: currentColor;
+}
+a:hover {
+    text-decoration: underline;
+    }
+a.no-color-change:hover {
+    color: currentColor;
 }
 
 /* NAV BAR */
-
-.nav-links {
-    color: #404040;
+#nav-bar {
+    text-align: center;
+    padding-top: 15px;
 }
-
+#nav-left {
+    float: left;
+}
+#nav-right {
+    float: right;
+}
+li {
+    display: inline;
+}
+li.nav-links {
+    color: #70757A;
+    text-align: center;
+    padding: 0px 0px 0px 15px;
+    font-size: 13px;
+}
 li.nav-links a:hover {
     text-decoration: underline;
-  }
-
-img {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    color: #70757A;
 }
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 ul.horizontal {
     list-style-type: none;
@@ -57,11 +101,41 @@ ul.horizontal {
     overflow: hidden;
 }
 
+
+/* logo */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* center content */
+#google-search-bar {
+    width: 100%;
+}
+#google-search-bar:hover {
+    color: #70757A;
+}
 .form {
     text-align: center;
-  }
+}
   
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #f3f3f3;
+    text-align: center;
+    padding: 10px 0px 12px 0px;
+    border-top: 3px #555753;
+}
+footer ul li {
+    display: inline;
+}
 
 /* other */
 .container {

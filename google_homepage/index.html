@@ -14,49 +14,52 @@
         <header>
             <!-- nav bar -->
             <nav>   
-                <ul id="nav-bar" class="horizontal"> 
-                    <li class="nav-links"><a link="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"> 
+                <ul id="nav-bar" name="nav-bar"> 
+                    <li id="nav-left" class="nav-links" style="padding-left: 27px;"><a link="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" class="no-color-change"> 
                         About</a></li>
-                    <li class="nav-links"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">
-                        Store</a></li>
-                    <li class="nav-links"><a href="#">Gmail</a></li>
-                    <li class="nav-links"><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">
+                    <li id="nav-left" class="nav-links"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" class="no-color-change">
+                        Store</a></li>            
+                    <li id="nav-right" class="nav-links" style="padding-right: 27px;"><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl" class="no-color-change">
                         Images</a></li>
+                    <li id="nav-right" class="nav-links"><a href="#" class="no-color-change">Gmail</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div id="page container" class="container"> 
+
+        <div id="main" class="center"> 
             <!-- center image -->
-            <div id="google-logo" class="col"> 
+            <div id="google-logo" class="center"> 
                 <a href=".">
                     <img id="google" src="img/google.png" alt="Go vote!" class="center">
                 </a>
             </div>
 
-            <!-- search bar -->
-            <div id="google-search-bar" class="center"> 
-                <form action="https://google.com/search?q=input"></form>
-                <label class="screen-reader-text" for="s"></label>
-                <input type="text" value="" name="q" id="s">
-            </div>
-            <!-- search buttons -->
-            <div id="google-search-buttons">
-                <button type="submit" class="btn fa-input" value="&#xf002;" style="font-family: Arial, Helvetica, sans-serif;">Google Search</button>
-                <button type="submit" class="">I'm Feeling Lucky</button>
+            <!-- search bar & buttons -->
+            <div id="google-search-bar" class="center" name="search-bar"> 
+                <form action="https://google.com/search?q=" method="get"></form>
+                <input id="search-bar" type="text" name="search" value="">
+
+                <button name="google-search" type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif;">Google Search</button>
+                <button class="search-button">I'm Feeling Lucky</button>
             </div>
 
+        </div>
+
+
             <!-- footer -->
-            <span id="footer" style="font-family: Arial, Helvetica, sans-serif;" class="nav-links">
-                <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
-                <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-                <a href="#">Settings</a>
-                <a href="">Advertising</a>
-                <a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">
-                    Business</a>
-                <a href="https://www.google.com/search/howsearchworks/?fg=1">
-                    How Search Works</a>
-            </span>
+            <footer>
+                <ul id="footer" style="font-family: Arial, Helvetica, sans-serif;" class="nav-links" name="footer-bar">
+                    <li id="nav-right" class="nav-links" style="padding-right: 27px;"><a href="#" class="no-color-change">Settings</a></li>
+                    <li id="nav-right" class="nav-links"><a href="https://policies.google.com/terms?hl=en&fg=1" class="no-color-change">Terms</a></li>
+                    <li id="nav-right" class="nav-links"><a href="https://policies.google.com/privacy?hl=en&fg=1" class="no-color-change">Privacy</a></li>
+                    <li id="nav-left" class="nav-links"><a href="#" class="no-color-change">Advertising</a></li>
+                    <li id="nav-left" class="nav-links"><a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" class="no-color-change">
+                        Business</a></li>
+                    <li id="nav-left" class="nav-links"><a href="https://www.google.com/search/howsearchworks/?fg=1" class="no-color-change">
+                        How Search Works</a></li>
+                    </ul>
+            </footer>
         </div>
     </body>
 
