@@ -3,6 +3,6 @@
 A repo of projects from Odin's "Foundations" course.
 
 ### Projects:
-##### * google-homepage
+#### google-homepage
 Recreation of Google's homepage with HTML/CSS.  
-![google-homepage](/google_homepage/img/googl-homepage.png)
+![google-homepage](google_homepage/img/googl-homepage.PNG)  
